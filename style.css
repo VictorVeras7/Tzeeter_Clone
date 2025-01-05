@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+}
+
+header > ul > li > a {
+    color:  rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 0;
+}
+
+li {
+    padding: 1.2%;
+}
+
+header > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header > ul > li:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 30px;
+} 
+
+img {
+    margin-top: 3%;
+    border-radius: 67%;
+}
+
+.number {
+    color: rgb(15, 20, 25);
+    font-style: bold;
+}
+
+main > ul {
+    list-style-type: none;
+}
+
+main > ul > li {
+    font-style: bold;
+    color:  rgb(83, 100, 113);
+    padding: 0%;
+}
+
+main > ul > li:hover {
+    text-decoration: underline;
+}
+
+main > section > a {
+    text-decoration: none;
+    color:  rgb(83, 100, 113);
+}
+
+main > section > a:hover {
+    text-decoration: underline;
+}
+
+section section a {
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+section section a:hover {
+    background-color: rgba(15, 25, 20, 0.03);
+}
+
+section section a[href="responder"]:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+section section a[href="retweetar"]:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+section section a[href="curtir"]:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+h4:first-of-type {
+    color: rgb(15, 20, 25);
+}
+
+h5, h5 span {
+    color: rgb(83, 100, 113);
+}
+
+h4:last-of-type {
+    color: rgb(15, 20, 25);
+}
+
+main ul:first-of-type li {
+    color: rgb(83, 100, 113);
+}
+
+section > h5 span:first-of-type {
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+section > h5 span:last-of-type {
+    color: rgb(83, 100, 113);
+}
+
+section > p {
+    color: rgb(15, 20, 25);
+}
+
+main > section:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+
+
