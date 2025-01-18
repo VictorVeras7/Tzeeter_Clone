@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
 body {
     background-color: white;
     color: rgb(15, 20, 25);
+    font-family:  'Montserrat', serif;
+
+}
+
+header img {
+    margin-top: 10px;
+    border-radius: 0%;
+}
+
+header i {
+    padding-right: 10px;
 }
 
 header > ul > li > a {
@@ -22,7 +35,20 @@ header > ul {
 header > ul > li:hover{
     background-color: rgba(15, 25, 20, 0.1);
     border-radius: 30px;
+    width: 125px;
 } 
+
+header button {
+    font-family:  'Montserrat', serif;
+    font-size: 12px;
+    background-color: rgb(64, 96, 238);
+    border-radius: 15px;
+    border: none;
+    color: aliceblue;
+    width: 80px;
+    height: 30px;
+    margin-top: 12px;
+}
 
 img {
     margin-top: 2%;
@@ -36,25 +62,56 @@ img {
 
 main > ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div button{
+    margin-top: 40px;
+    height: 30px;
+    width: 100px;
+    font-family:  'Montserrat', serif;
+    font-size: 12px;
+    background-color: rgb(64, 96, 238);
+    border-radius: 15px;
+    border: none;
+    color: aliceblue;
 }
 
 main > ul > li {
-    font-style: bold;
+    font-weight: bold;
     color:  rgb(83, 100, 113);
-    padding: 0%;
+    padding: 7px;
 }
 
 main > ul > li:hover {
     text-decoration: underline;
 }
 
+.conteudo {
+    background-color: rgba(15, 25, 20, 0.03);
+    display: flex;
+    justify-content: space-around;
+}
+
 main > section > a {
     text-decoration: none;
     color:  rgb(83, 100, 113);
+    width: 100vh;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main > section > a:hover {
     text-decoration: underline;
+    background-color:  gray;
 }
 
 section section a {
