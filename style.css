@@ -39,6 +39,7 @@ header > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 header > ul > li:hover{
@@ -295,4 +296,59 @@ main > section:hover {
     padding: 7px;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    header {
+        width: 80px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px 0; 
+        height: 100vh; 
+        background-color: white; 
+    }
+
+    header > ul {
+        width: 100%; 
+    }
+
+    header > ul > li {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0; 
+    }
+
+    header > ul > li > a span {
+        display: none;
+    }
+
+    header > ul > li > a i {
+        font-size: 24px; 
+    }
+
+    header button {
+        width: 60px; 
+        height: 60px; 
+        padding: 0; 
+        justify-content: center;
+        margin-top: auto; 
+        background-color: rgb(64, 96, 238); 
+        border: none;
+        border-radius: 50%;
+    }
+
+    header button span {
+        display: none;
+    }
+
+    header button i {
+        font-size: 24px;
+    }
+
+    main {
+        width: calc(100% - 80px);
+        padding: 20px; 
+    }
+}
+
 
