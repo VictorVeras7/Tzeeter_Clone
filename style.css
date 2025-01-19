@@ -4,12 +4,21 @@ body {
     background-color: white;
     color: rgb(15, 20, 25);
     font-family:  'Montserrat', serif;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
 
+header {
+    margin-left: 55px;
+    margin-right: 30px;
 }
 
 header img {
     margin-top: 10px;
-    border-radius: 0%;
+
 }
 
 header i {
@@ -23,7 +32,7 @@ header > ul > li > a {
 }
 
 li {
-    padding: 0.5%;
+    padding: 13px 0px;
 }
 
 header > ul {
@@ -35,7 +44,8 @@ header > ul {
 header > ul > li:hover{
     background-color: rgba(15, 25, 20, 0.1);
     border-radius: 30px;
-    width: 125px;
+    width: 130px;
+    padding: 13px;
 } 
 
 header button {
@@ -50,14 +60,29 @@ header button {
     margin-top: 12px;
 }
 
-img {
-    margin-top: 2%;
-    border-radius: 67%;
+main img {
+    width: 150px;
+    height: 150px;
+    margin-left: 0px;
 }
 
 .number {
     color: rgb(15, 20, 25);
     font-style: bold;
+}
+
+main {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 650px;
+    height: 100vh;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+}
+
+main > div,h4,ul,h5,p {
+    padding: 0px 20px 0px 20px;
 }
 
 main > ul {
@@ -86,7 +111,7 @@ div button{
 main > ul > li {
     font-weight: bold;
     color:  rgb(83, 100, 113);
-    padding: 7px;
+    padding: 7px 30px;
 }
 
 main > ul > li:hover {
@@ -111,33 +136,59 @@ main > section > a {
 
 main > section > a:hover {
     text-decoration: underline;
-    background-color:  gray;
+    background-color:  rgba(15, 25, 20, 0.1);
+}
+
+.tweet {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.actions {
+    padding-bottom: 10px;
+}
+
+.actions i {
+    padding-right: 5px;
 }
 
 section section a {
     color: rgb(83, 100, 113);
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 0px 55px;
     border-radius: 5px;
     background-color: transparent;
 }
 
-section section a:hover {
-    background-color: rgba(15, 25, 20, 0.03);
-}
-
-section section a[href="responder"]:hover {
+section section .bi-chat:hover {
     background-color: rgba(29, 155, 240, 0.1);
     color: rgba(29, 155, 240, 1);
 }
 
-section section a[href="retweetar"]:hover {
+section section .bi-arrow-repeat:hover {
     background-color: rgba(0, 186, 124, 0.1);
     color: rgba(0, 186, 124, 1);
 }
 
-section section a[href="curtir"]:hover {
+section section .bi-heart:hover {
     background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+section section a[href="compartilhar"]:hover {
+    background-color: rgba(15, 25, 20, 0.03);
+}
+
+section section a[href="responder"]:hover {
+    color: rgba(29, 155, 240, 1);
+}
+
+section section a[href="retweetar"]:hover {
+    color: rgba(0, 186, 124, 1);
+}
+
+section section a[href="curtir"]:hover {
     color: rgba(249, 24, 128, 1);
 }
 
@@ -174,5 +225,74 @@ main > section:hover {
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+.others {
+    padding: 10px;
+    min-width: 190px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: rgba(100, 100, 100, 0.1) 2px solid;    
+}
 
+.others > .search {
+    padding: 3px;
+    border-radius: 25px;
+    color:  rgba(100, 100, 100, 0.8);
+    height: 30px;
+    background-color:  rgba(100, 100, 100, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.others > .search > input {
+    display: inline;
+    max-width: 80%;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.others > .search > input:focus {
+    border: none;
+    outline: none;
+}
+
+.others > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color:  rgba(100, 100, 100, 0.1);
+}
+
+.others > .container a {
+    color: rgba(0, 0, 255, 0.6);
+}
+
+.others > .container > .person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;  
+}
+
+.others > .container > .person img {
+    width: 42px;
+}
+
+.others > .container > .person a {
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.6);
+}
+
+.others > .container > .person button {
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.6);
+    padding: 7px;
+    border-radius: 5px;
+}
 
