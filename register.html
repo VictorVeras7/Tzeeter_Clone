@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Criar Conta</h2>
+        <div class="create-close">
+            <h2>Criar Conta</h2>
+            <button class="close"><i class="bi bi-x-lg"></i></button>
+        </div>
         <form id="registerForm">
             <label>Nome:</label>
             <input type="text" id="name" required>
@@ -27,32 +30,45 @@
             <input type="password" id="confirmPassword" required>
             <div class="error" id="confirmPasswordError"></div>
             
-            <label>Data de Nascimento:</label>
-            <select id="month" required>
-                <option value="">Mês</option>
-                <option value="1">Janeiro</option>
-                <option value="2">Fevereiro</option>
-                <option value="3">Março</option>
-                <option value="4">Abril</option>
-                <option value="5">Maio</option>
-                <option value="6">Junho</option>
-                <option value="7">Julho</option>
-                <option value="8">Agosto</option>
-                <option value="9">Setembro</option>
-                <option value="10">Outubro</option>
-                <option value="11">Novembro</option>
-                <option value="12">Dezembro</option>
-            </select>
-            <select id="day" required></select>
-            <select id="year" required></select>
-            <div class="error" id="dobError"></div>
-            
-            <label>Receber e-mails:</label>
-            <input type="checkbox" id="emails">
-            
-            <label>Concorda com a política?</label>
-            <input type="radio" name="terms" id="agree"> Sim
-            <input type="radio" name="terms" id="disagree"> Não
+            <label><strong>Data de Nascimento:</strong></label>
+            <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimção ou outros.</p>
+            <div class="date">
+                <select id="month" required>
+                    <option value="">Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <select id="day" required></select>
+                <select id="year" required></select>
+                <div class="error" id="dobError"></div>
+            </div>
+
+            <div class="receive">
+                <label>Receber e-mails sobre sua atividade no tzeeter e recomendações.</label>
+                <input type="checkbox" id="emails">
+            </div>
+    
+            <label>Você concorda com nossos Termos, com a Política de Privacidade e com uso de Cookies</label>
+            <div class="options">
+                <div class="options-radio">
+                    <input type="radio" name="terms" id="agree">
+                    <label>sim</label>
+                </div>
+                <div class="options-radio">
+                    <input type="radio" name="terms" id="disagree">
+                    <label>não</label>
+                </div>
+            </div>
             <div class="error" id="termsError"></div>
             
             <button type="submit" id="submitBtn" disabled>Se inscrever</button>

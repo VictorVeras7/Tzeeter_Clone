@@ -7,33 +7,131 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 800px;
 }
+
 .form-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     background: white;
-    padding: 20px;
+    padding: 10px 0px 10px 0px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
 }
-input, select {
+
+.create-close {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: #808080 1px solid;
+    height: 40px;
     width: 100%;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+.form-container .create-close .close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    margin-right: 10px;
+}
+
+.create-close button i{
+    font-size: 18px;
+    color: #808080;
+}
+
+.form-container h2 {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+form {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+input, select {
+    width: 92%;
     padding: 8px;
     margin: 5px 0;
+    border-radius: 3px;
+    border: #808080 1px solid;
 }
+
+.date {
+    padding-top: 1px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.receive {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.options-radio {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.options-radio label {
+    padding-right: 7px;
+    margin-top: 1px;
+}
+
+.options-radio input {
+    margin-bottom: 20px;
+}
+
 .error {
     color: red;
     font-size: 12px;
 }
+
 button {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     background-color: blue;
     color: white;
     border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
+
 button:disabled {
     background-color: gray;
     cursor: not-allowed;
 }
+
+
