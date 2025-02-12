@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+dialog {
+    border: none;
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.tzeet-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tzeet-box img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.textarea-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    padding: 10px;
+    min-height: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.reply {
+    color: #1d9bf0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 0;
+    margin-left: 9px;
+}
+
+.reply:hover {
+    background: rgba(29, 155, 240, 0.1);
+    border-radius: 5px;
+}
+
+.icons-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-top: 1px solid #ddd;
+}
+
+.icons {
+    display: flex;
+    gap: 2px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: gray;
+}
+
+.icons a:hover {
+    background: rgba(29, 155, 240, 0.1);
+    color: #1d9bf0;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-bar p {
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-size: 14px;
+}
+
+.counter.warning {
+    color: rgb(255, 200, 0);
+}
+
+.counter.error {
+    color: rgb(255, 0, 0);
+}
+
+.send-btn {
+    background: #1d9bf0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+}
+
+.send-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.tzeet-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tzeet-box img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.textarea-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    padding: 10px;
+    min-height: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.reply {
+    color: #1d9bf0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 0;
+    margin-left: 9px;
+}
+
+.reply:hover {
+    background: rgba(29, 155, 240, 0.1);
+    border-radius: 5px;
+}
+
+.icons-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-top: 1px solid #ddd;
+}
+
+.icons {
+    display: flex;
+    gap: 2px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: gray;
+}
+
+.icons a:hover {
+    background: rgba(29, 155, 240, 0.1);
+    color: #1d9bf0;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-bar p {
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-size: 14px;
+}
+
+.counter.warning {
+    color: rgb(255, 200, 0);
+}
+
+.counter.error {
+    color: rgb(255, 0, 0);
+}
+
+.send-btn {
+    background: #1d9bf0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+}
+
+.send-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.close {
+    background-color: white;
+    border: none;
+}

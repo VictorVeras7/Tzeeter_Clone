@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #808080; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 380px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    background-color: white;
+    color: black;
+    padding-right: 35px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 2px solid #1d9bf0;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #1d9bf0;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #1d9bf0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.login-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.login-btn:hover {
+    background-color: #1479c9;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #1d9bf0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    font-size: 18px;
+    display: none;
+}
+
+/*js*/
+.input-group input.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+.input-group input.error + .icon-error {
+    color: red;
+    display: block;
+}
+
+.input-group input.valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+}
+
+.input-group input.valid + .icon-success {
+    color: green;
+    display: block;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
