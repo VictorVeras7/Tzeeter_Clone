@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function validateForm() {
         let valid = true;
-        
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
         if (!nameInput.value.trim()) {
             nameError.textContent = "Por favor, informe um nome de usuário.";
             nameInput.classList.add("error");
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nameInput.classList.remove("error");
         }
 
-        if (!emailInput.value.trim()) {
+        if (!emailPattern.test(emailInput.value.trim())) {
             emailError.textContent = "Informe um email válido.";
             emailInput.classList.add("error");
             valid = false;

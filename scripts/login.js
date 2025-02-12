@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         let validEmail = emailPattern.test(email);
-        let validPassword = password.length > 0;
+        let validPassword = password.length > 6;
 
         if (validEmail) {
             emailInput.classList.add("valid");
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         loginButton.disabled = !(validEmail && validPassword);
     }
 
-    // Eventos de input
     emailInput.addEventListener("input", validateForm);
     passwordInput.addEventListener("input", validateForm);
 });
